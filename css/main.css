@@ -54,6 +54,24 @@ body{
         border-radius:10px;
         font-size: 22px;    
     }
-   
+     /* footer part rule  */
+     .rule__btn{
+         width: 200px;
+         position: relative;
+     }
+     .btn-game{
+         position: absolute;
+         left: 40%;
+         margin: 10px auto;
+         padding: 8px 10px;
+         background: none;
+         border:none;
+         outline:none;
+         border:1px solid #fff;
+         color:#fff;
+         text-transform: uppercase;
+         font-size: 20px;
+         border-radius:10px;
+     }
       
 }
