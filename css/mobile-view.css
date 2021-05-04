@@ -77,10 +77,11 @@
     padding: 0px;
   }
   .result{
-    width: 100%;
+    width: 300px;
     position: absolute;
-    top: 80%;
-    font-size: 40px;
+    top: 110%;
+    left: 0;
+    font-size: 50px;
   }
   .play-again{
     position: absolute;
