@@ -77,14 +77,14 @@
     padding: 0px;
   }
   .result{
+    width: 100%;
     position: absolute;
-    top: 110%;
-    left: 20%;
-    font-size: 50px;
+    top: 80%;
+    font-size: 40px;
   }
   .play-again{
     position: absolute;
-    top: 160%;
+    top: 130%;
     padding: 15px 30px;
     font-size: 18px;
     left: 25%;
