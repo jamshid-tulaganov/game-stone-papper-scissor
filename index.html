@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Barlow+Semi+Condensed">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/mobile-view.css">
+  <title>Document</title>
 </head>
 <body>
-    
-    <header class="game__header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="game__header-texts">
-                <h1 class="game__header-text">Qaychi</h1>
-                <h1 class="game__header-text">Qog'oz</h1>
-                <h1 class="game__header-text">Quduq</h1>
-            </div>
-            <div class="game__header-score d-flex align-items-center justify-content-center">
-                <p class="header__score-text">natija</p>
-                <input type="text" class="score" value="120" readonly>
-            </div>
-        </div>
-    </header>
-    <main class="game__main">
-        <div class="container">
-            
-            
-        </div>            
-    </main>
-    
-    <footer class="game__footer">
-        <div class="container">
-            <!-- Button trigger modal -->
-            <div class="rule_btn">
-                <button type="button" class="btn btn-game" data-toggle="modal" data-target="#exampleModalCenter">
-                    Rules
-                  </button>
-            </div>
+  
+  <header class="game__header">
+    <div class="container header--container">
+      <div class="game__header-texts">
+        <h1 class="game__header-text">Qaychi</h1>
+        <h1 class="game__header-text">Qog'oz</h1>
+        <h1 class="game__header-text">Quduq</h1>
+      </div>
+
+        <div class="score-value">
+          <p>You</p>
+          <div class="score">0</div>
+          <p>Computer</p>
+          <div class="comp-score score">0</div>
+        </div> 
+    </div>
+  </header>
+  <main class="game__main">
+    <div class="container main--container">
+      <div class="pickeds d-none">
+        <p>You picked</p>
+        <p id="picked-comp">house picked</p>
+      </div>  
+      <div class="button-bgc">
+        <img src="./images/bg-triangle.svg" alt="">
+      </div>
       
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+      <div class="buttons">
+        <div class="btn-top">
+          <button class="button button-paper">
+            <img src="./images/icon-paper.svg" alt="papper">
+          </button>
+          <button class="button button-scissor">
+            <img src="./images/icon-scissors.svg" alt="scissor">
+          </button>
+        </div>
+        <div class="btn-bottom">
+          <button class="button button-rock">
+            <img src="./images/icon-rock.svg" alt="rock">
+          </button>
+        </div>
+        <div class="result d-none"></div>
+        <button class="play-again d-none">Play again</button>
+        <div class="computer__buttons d-none">
+          <button class="button button-paper papper-2">
+            <img src="./images/icon-paper.svg" alt="papper">
+          </button>
+          <button class="button button-scissor scissor-2">
+            <img src="./images/icon-scissors.svg" alt="scissor">
+          </button>
+          <button class="button button-rock rock-2">
+            <img src="./images/icon-rock.svg" alt="rock">
+          </button>
         </div>
       </div>
+    </div>            
+  </main>
+  
+  <footer class="site-footer">
+      <section class="modal d-none">
+        <div class="modal-dialog">
+          <div class="rules-part">
+           <p>Rules</p>
+           <button class="btn btn-close">
+             <i class="fa fa-close"></i>
+           </button>
+          </div>
+          <div class="images">
+            <img src="./images/image-rules.svg" alt="image-rules">
+          </div>
         </div>
-    </footer>
-    
-    
-    
-</main>
+      </section> 
+      <button class=" btn btn-rules">Rules</button>
+      <section class="modal modal-result d-none">
+        <div class="modal-win d-none">
+          You win
+          <button class="play-again result-then">Play again</button>
+        </div>
+        <div class="modal-lose d-none">
+          You lose
+          <button class="play-again result-then">Play again</button>
+        </div>
+      </section>
+  </footer>
+  
 
-
-
-
-<script src="./js/jquery-3.5.1.min.js"></script>
-<script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
