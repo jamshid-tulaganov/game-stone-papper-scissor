@@ -240,7 +240,7 @@ body{
 }
 .modal-dialog{
     width: 330px;
-    height: 370px;
+    height: 450px;
     padding: 10px 20px;
     position: absolute;
     top: 50%;
@@ -248,6 +248,13 @@ body{
     transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 10px;
+}
+.modal-dialog p{
+    color:#666;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    text-align: center;
 }
 .btn{
     background:none;
@@ -325,9 +332,9 @@ body{
     color:#fff;
     text-shadow: 2px 2px 5px #ddd;
 }
-.result-then{
+.repeat-game-win, .repeat-game-lose{
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%,-50%);
 }

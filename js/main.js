@@ -21,9 +21,13 @@ var elCompScore = $('.comp-score')
 var elModalResult = $('.modal-result')
 var elModalWin = $('.modal-win')
 var elModalLose = $('.modal-lose')
-var elResultThenBtn = $('.result-then')
+var elRepeatGameWin = $('.repeat-game-win')
+var elRepeatGameLose = $('.repeat-game-lose')
 
-elResultThenBtn.addEventListener('click', function(){
+elRepeatGameWin.addEventListener('click', function(){
+  window.location.reload();
+})
+elRepeatGameLose.addEventListener('click', function(){
   window.location.reload();
 })
 
